@@ -657,3 +657,55 @@ span{
         grid-template-columns: repeat(1,1fr);
     }
 }
+
+
+@media(max-width:695px){
+    #menu-icon{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 50%;
+        padding: 1rem 3%;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(20px);
+        border-bottom-left-radius: 2rem;
+        border-left: 2px solid var(--main-color);
+        border-bottom: 2px solid var(--main-color);
+        display: none;
+    }
+    .navbar.active{
+        display: block;
+    }
+    .navbar a{
+        display: block;
+        font-size: 1rem;
+        margin: 1.5rem 0;
+        color: white;
+    }
+    .home{
+        flex-direction: column-reverse;
+        margin: 2rem 2rem;
+    }
+    .home-content h3{
+        font-size: 1.5rem;
+    }
+    .home-content h1{
+        font-size: 4rem;
+        margin-top: 1.5rem;
+    }
+    .home-content p{
+        width: 40vw;
+    }
+    .services h2{
+        margin-bottom: 1.5rem;
+    }
+    .services-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .service-info p{
+        font-size: 1.2rem;
+    }
+}
